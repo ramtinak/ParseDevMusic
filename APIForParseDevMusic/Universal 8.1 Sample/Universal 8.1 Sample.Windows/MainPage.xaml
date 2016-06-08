@@ -1,0 +1,76 @@
+﻿<Page
+    x:Class="Universal_8._1_Sample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Universal_8._1_Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#F20F0F0F">
+        <ScrollViewer x:Name="sc">
+            <ListView x:Name="gridView"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Top"
+                      IsItemClickEnabled="True"
+                      ItemClick="gridView_ItemClick">
+                <ListView.ItemTemplate>
+                    <DataTemplate  x:Name="ContactGridViewTemplate0">
+                        <Border Background="#7F8B8B8B"
+                                Margin="0"
+                                Padding="0"
+                                BorderBrush="#FF111111"
+                                Width="150"
+                                Height="150">
+                            <TextBlock Text="{Binding Name}"
+                                       FontSize="18"
+                                       Foreground="Black"
+                                       TextWrapping="NoWrap"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center" />
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Padding"
+                                Value="0" />
+                        <Setter Property="Margin"
+                                Value="0" />
+                        <Setter Property="BorderThickness"
+                                Value="0" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapGrid Orientation="Horizontal"
+                                  VerticalChildrenAlignment="Stretch"
+                                  HorizontalChildrenAlignment="Stretch" />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+        </ScrollViewer>
+
+        <Border x:Name="pb"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Background="#9F000009"
+                Visibility="Collapsed"
+                Height="100">
+            <StackPanel VerticalAlignment="Center">
+                <ProgressRing x:Name="pbx"
+                              IsActive="True"
+                              VerticalAlignment="Center"
+                              HorizontalAlignment="Center"
+                              Visibility="Visible"
+                              Background="{x:Null}"
+                              Foreground="#CC00A2FF"></ProgressRing>
+                <TextBlock Text="Please wait..."
+                           HorizontalAlignment="Center"
+                           FontSize="16" />
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
