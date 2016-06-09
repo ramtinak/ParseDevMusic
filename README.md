@@ -38,7 +38,7 @@ Returns a Json value:
 	http://api.win-nevis.com/index.aspx?siteAddress=SITENAME
 
 Replace desired site name with "SITENAME". For example:
-For example gets farskids:
+For example getting farskids:
 
 	http://api.win-nevis.com/index.aspx?siteAddress=farskids
 
@@ -69,7 +69,7 @@ Json response:
 	      }
 	    ]
 ```
-### Gets a specific page of sites:
+### Getting a specific page of sites:
 
 	http://api.win-nevis.com/index.aspx?siteAddress=SITENAME&p=PAGENUMBER
 example:
@@ -100,7 +100,7 @@ Json response looks like anothers.
 
 
 
-### Gets download links of a song, video
+### Getting download links of a song, video
 
 	http://api.win-nevis.com/index.aspx?siteAddress=SITENAME&getDownloadLink=POSTLINK
 Example:
