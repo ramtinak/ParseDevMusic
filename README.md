@@ -15,7 +15,7 @@ Url for gets sites lists that supported:
 	http://api.win-nevis.com/sites.aspx
 
 Returns a Json value:
-
+```json
 	    [
 	      {
 	        "Address": string,
@@ -30,7 +30,8 @@ Returns a Json value:
 	        "Name": string
 	      }
 	    ]
-
+	    
+```
 ### Gets a special site:
 
 	http://api.win-nevis.com/index.aspx?siteAddress=SITENAME
@@ -41,7 +42,7 @@ For example gets farskids:
 	http://api.win-nevis.com/index.aspx?siteAddress=farskids
 
 Json response:
-
+```json
 	     [
 	      {
 	        "ComingSoon": false,
@@ -66,7 +67,7 @@ Json response:
 	        "View": "41,083 Views"
 	      }
 	    ]
-
+```
 ### Gets a specific page of sites:
 
 	http://api.win-nevis.com/index.aspx?siteAddress=SITENAME&p=PAGENUMBER
@@ -106,7 +107,7 @@ Example:
 	http://api.win-nevis.com/index.aspx?siteAddress=farskids&getDownloadLink=http://www.28farskids.com/music/ahmad-saeedi-yadet-biad/
 
 Json response
-
+```json
 	     [
 	      {
 	        "CommingSoon": false,
@@ -127,6 +128,6 @@ Json response
 	        "Views": null
 	      }
 	    ]
-
+```
 Persian training:
 [Parse Dev Music API in Win Nevis forum](http://www.win-nevis.com/topic/230-%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-api-%D9%85%D9%88%D8%B2%DB%8C%DA%A9-%D8%A7%D8%B3%D8%AA%D8%AF%DB%8C%D9%88-%D9%BE%D8%A7%D8%B1%D8%B3%D9%87-%D9%86%D8%B3%D8%AE%D9%87-103/)
