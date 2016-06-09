@@ -4,13 +4,14 @@
 ### Source codes available for Windows 8.1, Windows Phone 8.1 and Windows 10(UWP APP).
 
 
-[Parse Dev Studio](http://www.parsedev.com) Music Api is a service that is easily to search, download or listen music by direct.
+[Parse Dev Studio](http://www.parsedev.com) Parse Dev Studio Music Api is an easy to use search service, You can download or strean directly.
 With this service you can easily access to any sites that is supported by Parse Dev Studio (for now is 14 sites: FazMusic, Farskids, IranMusic, Nex1Music, MusicIrooni, PopMusic, Ahangestan, PlayMusic, MusicBaz, MusicBaran, TakTaraneh, TehranMusic, Zenefarm music searcher, Mp3PM music searcher). 
-just type that site name you want api will returns a result to that music/videos
+Just type the site name and api will returns a result containing music/videos
+
 
 ### Supported Sites
 
-Url for gets sites lists that supported:
+URL For getting list of supported sites:
 
 	http://api.win-nevis.com/sites.aspx
 
@@ -32,11 +33,11 @@ Returns a Json value:
 	    ]
 	    
 ```
-### Gets a special site:
+### Getting a special site:
 
 	http://api.win-nevis.com/index.aspx?siteAddress=SITENAME
 
-Replace your site name(farskids, fazmusic, iranmusic and...) with SITENAME
+Replace desired site name with "SITENAME". For example:
 For example gets farskids:
 
 	http://api.win-nevis.com/index.aspx?siteAddress=farskids
